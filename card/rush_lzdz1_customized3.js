@@ -1,9 +1,9 @@
 /*
-12.12品牌礼遇 天降惊喜
+汤臣倍健PLUS会员狂欢日联合盛典
 
-https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity?activityId=dd202112054tv7ur9e458rmdh&shareUuid=9df288c6b072416984e60e5f62ab8459
+https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity?activityId=dd20211210xgdby3zem7vp5y&shareUuid=9df288c6b072416984e60e5f62ab8459
 */
-const $ = new Env("12.12品牌礼遇 天降惊喜");
+const $ = new Env("汤臣倍健PLUS会员狂欢日联合盛典");
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
 let cookiesArr = [], cookie = '', message = '';
@@ -29,7 +29,7 @@ if ($.isNode()) {
         $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/bean/signIndex.action', { "open-url": "https://bean.m.jd.com/bean/signIndex.action" });
         return;
     }
-    authorCodeList = await getAuthorCodeList('https://gitee.com/fatelight/code/raw/master/lzdz1_customized.json')
+    authorCodeList = await getAuthorCodeList('https://gitee.com/fatelight/code/raw/master/lzdz1_customized3.json')
     if($.getAuthorCodeListerr === false){
         authorCodeList = [
             '9df288c6b072416984e60e5f62ab8459',
